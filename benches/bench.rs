@@ -1,5 +1,5 @@
 use criterion::{criterion_group, criterion_main, Criterion};
-use air_navigator_rs::{AdcChannel, Navigator, PwmChannel, UserLed};
+use navigator_rs::{AdcChannel, Navigator, PwmChannel, UserLed};
 
 fn navigator_benchmark(c: &mut Criterion) {
     #[macro_export]

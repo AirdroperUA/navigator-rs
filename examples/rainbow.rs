@@ -1,4 +1,4 @@
-use air_navigator_rs::Navigator;
+use navigator_rs::Navigator;
 use std::thread::sleep;
 use std::time::Duration;
 

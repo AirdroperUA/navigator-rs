@@ -23,4 +23,4 @@ However, despite using the embedded-hal concept, new ports can be added as long 
 For more information, including installation instructions, schematics, and hardware specifications, please check the [navigator hardware setup guide](https://bluerobotics.com/learn/navigator-hardware-setup/#introduction).
 
 ## How to use this crate:
-The capabilities of the Navigator can be accessed through the Navigator object. Please check the examples in the **[`Implementations`](https://docs.bluerobotics.com/navigator-rs/air_navigator_rs/struct.Navigator.html#implementations)** section.
+The capabilities of the Navigator can be accessed through the Navigator object. Please check the examples in the **[`Implementations`](https://docs.bluerobotics.com/navigator-rs/navigator_rs/struct.Navigator.html#implementations)** section.

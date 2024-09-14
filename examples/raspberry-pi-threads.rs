@@ -1,11 +1,11 @@
-use air_navigator_rs::{Navigator, UserLed};
+use navigator_rs::{Navigator, UserLed};
 use std::sync::{Arc, Mutex, RwLock};
 use std::thread::{self, sleep};
 use std::time::Duration;
 
 fn main() {
     println!("Creating your SensorData cache!");
-    let sensor_data = Arc::new(RwLock::new(air_navigator_rs::SensorData::default()));
+    let sensor_data = Arc::new(RwLock::new(navigator_rs::SensorData::default()));
 
     println!("Creating your navigator module!");
     let nav = Arc::new(Mutex::new(Navigator::new()));
