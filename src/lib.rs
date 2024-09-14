@@ -279,8 +279,6 @@ impl NavigatorBuilder {
         let pwm = Pca9685::new(dev, address).unwrap();
 
         let dev = I2cdev::new("/dev/i2c-1").unwrap();
-
-        let dev = I2cdev::new("/dev/i2c-1").unwrap();
         let address = adc_Address::default();
         let adc = Ads1x1x::new_ads1115(dev, address);
 
