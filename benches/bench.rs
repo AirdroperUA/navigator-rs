@@ -21,7 +21,6 @@ fn navigator_benchmark(c: &mut Criterion) {
 
     bench!(read_accel());
     bench!(read_gyro());
-    bench!(read_mag());
 
     bench!(read_pressure());
     bench!(read_temperature());

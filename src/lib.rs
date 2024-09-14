@@ -7,7 +7,6 @@ use ads1x1x::{
     interface::I2cInterface,
     Ads1x1x, DynamicOneShot, SlaveAddr as adc_Address,
 };
-use ak09915_rs::{Ak09915, Mode as mag_Mode};
 use bmp280::{Bmp280, Bmp280Builder};
 use embedded_hal::{digital::v2::InputPin, prelude::_embedded_hal_blocking_delay_DelayMs};
 use icm20689::{self, AccelRange, Builder as imu_Builder, GyroRange, SpiInterface, ICM20689};
@@ -136,7 +135,6 @@ pub struct SensorData {
     pub temperature: f32,
     pub pressure: f32,
     pub accelerometer: AxisData,
-    pub magnetometer: AxisData,
     pub gyro: AxisData,
     pub leak: bool,
 }
@@ -162,7 +160,6 @@ pub struct Navigator {
     bmp: Bmp280,
     adc: Ads1x1x<I2cInterface<I2cdev>, Ads1115, Resolution16Bit, ads1x1x::mode::OneShot>,
     imu: ICM20689<SpiInterface<Spidev, Pin>>,
-    mag: Ak09915<I2cdev>,
     led: Led,
     neopixel: Strip,
     leak: Pin,
@@ -282,7 +279,6 @@ impl NavigatorBuilder {
         let pwm = Pca9685::new(dev, address).unwrap();
 
         let dev = I2cdev::new("/dev/i2c-1").unwrap();
-        let mag = Ak09915::new(dev);
 
         let dev = I2cdev::new("/dev/i2c-1").unwrap();
         let address = adc_Address::default();
@@ -340,7 +336,6 @@ impl NavigatorBuilder {
             adc: (adc),
             bmp: (bmp),
             pwm: Pwm { pca: pwm, oe_pin },
-            mag: (mag),
             imu: (imu),
             led: (led),
             neopixel: (neopixel),
@@ -364,9 +359,6 @@ impl Navigator {
         self.self_test();
         //Initialize devices on navigator's default settings,
         //read more on ./navigator-api.pdf
-        self.mag.init().unwrap();
-        self.mag.set_mode(mag_Mode::Cont200Hz).unwrap();
-
         self.imu
             .setup(&mut Delay {})
             .expect("Error: Failed on IMU setup");
@@ -403,10 +395,6 @@ impl Navigator {
         //Check if the sensors are attached by it's IDs,
         //run self-test if they have.
         self.imu.check_identity(&mut Delay {}).unwrap();
-        self.mag
-            .self_test()
-            .expect("Error : Error on magnetometer during self-test")
-    }
 
     /// Sets the PWM IC to be enabled through OE_pin.
     ///
@@ -902,15 +890,6 @@ impl Navigator {
     ///     sleep(Duration::from_millis(1000));
     /// }
     /// ```
-    pub fn read_mag(&mut self) -> AxisData {
-        let (x, y, z) = self.mag.read().unwrap();
-        // Change the axes to navigator's standard. Right-handed, Z-axis down (aeronautical frame, NED).
-        AxisData {
-            x: y,
-            y: x * -1.0,
-            z,
-        }
-    }
 
     /// Reads the temperature using BMP280 of [`Navigator`].
     ///
@@ -1155,7 +1134,6 @@ impl Navigator {
             temperature: self.read_temperature(),
             pressure: self.read_pressure(),
             accelerometer: self.read_accel(),
-            magnetometer: self.read_mag(),
             gyro: self.read_gyro(),
             leak: self.read_leak(),
         }
@@ -1183,7 +1161,6 @@ impl Navigator {
             adc: ADCData,
             bmp: Bmp,
             imu: Imu,
-            mag: AxisData,
             leak: bool,
         }
 
@@ -1198,7 +1175,6 @@ impl Navigator {
                 accelerometer: self.read_accel(),
                 gyroscope: self.read_gyro(),
             },
-            mag: self.read_mag(),
             leak: self.read_leak(),
         }
     }
