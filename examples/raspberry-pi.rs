@@ -1,4 +1,4 @@
-use navigator_rs::{Navigator, PwmChannel};
+use air_navigator_rs::{Navigator, PwmChannel};
 use std::thread::sleep;
 use std::time::Duration;
 
