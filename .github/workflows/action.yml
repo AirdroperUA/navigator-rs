@@ -57,7 +57,7 @@ jobs:
 
   bench:
     needs: build
-    if: ${{ github.repository_owner == 'airdroperua' }}
+    if: ${{ github.repository_owner == 'AirdroperUA' }}
     runs-on: raspbian-armv7-kernel-5.10.33
     steps:
     - uses: actions/checkout@master
