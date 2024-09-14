@@ -12,7 +12,6 @@ Control:
 
 Measurements:
 - ADC (Analog Digital Converter) entries
-- Magnetic field
 - Acceleration
 - Angular velocity
 - Temperature
