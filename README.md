@@ -2,7 +2,7 @@
 
 This crate serves as the entry point for embedding applications using Rust on Blue Robotics's [Navigator](https://bluerobotics.com/store/comm-control-power/control/navigator/).
 
-The Navigator board has the Raspberry Pi HAT form factor, which allows you to easily attach it to a Raspberry Pi 4 board. Then you can unleash the power of Navigator to develop new solutions or interact with your ROV hardware.
+The Navigator board has the Raspberry Pi HAT form factor, which allows you to easily attach it to a Raspberry Pi 4 board. Then you can unleash the power of Navigator to develop new solutions or interact with your ROV hardware
 
 The board offers the following capabilities:
 
