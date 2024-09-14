@@ -394,7 +394,7 @@ impl Navigator {
     pub fn self_test(&mut self) -> bool {
         //Check if the sensors are attached by it's IDs,
         //run self-test if they have.
-        self.imu.check_identity(&mut Delay {}).unwrap();
+        self.imu.check_identity(&mut Delay {}).unwrap()
     }
 
     /// Sets the PWM IC to be enabled through OE_pin.
