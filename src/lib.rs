@@ -417,7 +417,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator};
+    /// use air_navigator_rs::{Navigator};
     /// use std::thread::sleep;
     /// use std::time::Duration;
     ///
@@ -449,7 +449,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator, PwmChannel};
+    /// use air_navigator_rs::{Navigator, PwmChannel};
     ///
     /// let mut nav = Navigator::new();
     ///
@@ -477,7 +477,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator, PwmChannel};
+    /// use air_navigator_rs::{Navigator, PwmChannel};
     ///
     /// let mut nav = Navigator::new();
     ///
@@ -507,7 +507,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator, PwmChannel};
+    /// use air_navigator_rs::{Navigator, PwmChannel};
     ///
     /// let mut nav = Navigator::new();
     ///
@@ -536,7 +536,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator, PwmChannel};
+    /// use air_navigator_rs::{Navigator, PwmChannel};
     ///
     /// let mut nav = Navigator::new();
     ///
@@ -564,7 +564,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator, PwmChannel};
+    /// use air_navigator_rs::{Navigator, PwmChannel};
     ///
     /// let mut nav = Navigator::new();
     ///
@@ -593,7 +593,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator, PwmChannel};
+    /// use air_navigator_rs::{Navigator, PwmChannel};
     ///
     /// let mut nav = Navigator::new();
     ///
@@ -642,7 +642,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator, PwmChannel};
+    /// use air_navigator_rs::{Navigator, PwmChannel};
     ///
     /// let mut nav = Navigator::new();
     ///
@@ -672,7 +672,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator, PwmChannel};
+    /// use air_navigator_rs::{Navigator, PwmChannel};
     /// use std::thread::sleep;
     /// use std::time::Duration;
     ///
@@ -717,7 +717,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{UserLed, Navigator};
+    /// use air_navigator_rs::{UserLed, Navigator};
     /// use std::thread::sleep;
     /// use std::time::Duration;
     ///
@@ -745,7 +745,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{UserLed, Navigator};
+    /// use air_navigator_rs::{UserLed, Navigator};
     /// use std::thread::sleep;
     /// use std::time::Duration;
     ///
@@ -772,7 +772,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{UserLed, Navigator};
+    /// use air_navigator_rs::{UserLed, Navigator};
     /// use std::thread::sleep;
     /// use std::time::Duration;
     ///
@@ -797,7 +797,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator};
+    /// use air_navigator_rs::{Navigator};
     /// use std::thread::sleep;
     /// use std::time::Duration;
     ///
@@ -825,7 +825,7 @@ impl Navigator {
     /// # Example
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator};
+    /// use air_navigator_rs::{Navigator};
     ///
     /// let mut nav = Navigator::new();
     ///
@@ -852,7 +852,7 @@ impl Navigator {
     /// # Example
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator};
+    /// use air_navigator_rs::{Navigator};
     ///
     /// let mut nav = Navigator::new();
     ///
@@ -916,7 +916,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator};
+    /// use air_navigator_rs::{Navigator};
     /// use std::thread::sleep;
     /// use std::time::Duration;
     ///
@@ -946,7 +946,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator};
+    /// use air_navigator_rs::{Navigator};
     /// use std::thread::sleep;
     /// use std::time::Duration;
     ///
@@ -969,7 +969,7 @@ impl Navigator {
     /// # Examples
     ///
     /// ```no_run
-    /// use navigator_rs::{Navigator, SensorData};
+    /// use air_navigator_rs::{Navigator, SensorData};
     /// use std::thread::sleep;
     /// use std::time::Duration;
     ///
