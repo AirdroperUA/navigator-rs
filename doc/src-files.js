@@ -1,5 +1,6 @@
 var srcIndex = new Map(JSON.parse('[\
 ["ads1x1x",["",[["devices",[["features",[],["mod.rs","tier1.rs","tier2.rs"]],["mode",[],["continuous.rs","mod.rs","oneshot.rs"]]],["common.rs","mod.rs"]]],["channels.rs","construction.rs","conversion.rs","ic.rs","interface.rs","lib.rs","types.rs"]]],\
+["air_navigator_rs",["",[],["lib.rs"]]],\
 ["approx",["",[],["abs_diff_eq.rs","lib.rs","macros.rs","relative_eq.rs","ulps_eq.rs"]]],\
 ["bitflags",["",[],["lib.rs"]]],\
 ["bitvec",["",[["array",[],["api.rs","iter.rs","ops.rs","traits.rs"]],["boxed",[],["api.rs","iter.rs","ops.rs","traits.rs"]],["field",[],["io.rs"]],["macros",[],["internal.rs"]],["ptr",[],["addr.rs","proxy.rs","range.rs","single.rs","span.rs"]],["slice",[["specialization",[],["lsb0.rs","msb0.rs"]]],["api.rs","iter.rs","ops.rs","specialization.rs","traits.rs"]],["vec",[],["api.rs","iter.rs","ops.rs","traits.rs"]]],["access.rs","array.rs","boxed.rs","devel.rs","domain.rs","field.rs","index.rs","lib.rs","macros.rs","mem.rs","order.rs","ptr.rs","slice.rs","store.rs","vec.rs","view.rs"]]],\
@@ -19,7 +20,6 @@ var srcIndex = new Map(JSON.parse('[\
 ["linux_embedded_hal",["",[],["cdev_pin.rs","lib.rs","serial.rs","sysfs_pin.rs","timer.rs"]]],\
 ["log",["",[],["__private_api.rs","lib.rs","macros.rs"]]],\
 ["memoffset",["",[],["lib.rs","offset_of.rs","raw_field.rs","span_of.rs"]]],\
-["navigator_rs",["",[],["lib.rs"]]],\
 ["nb",["",[],["lib.rs"]]],\
 ["nix",["",[["mount",[],["linux.rs","mod.rs"]],["net",[],["if_.rs","mod.rs"]],["sys",[["ioctl",[],["linux.rs","mod.rs"]],["ptrace",[],["linux.rs","mod.rs"]],["socket",[],["addr.rs","mod.rs","sockopt.rs"]]],["aio.rs","epoll.rs","eventfd.rs","inotify.rs","memfd.rs","mman.rs","mod.rs","personality.rs","pthread.rs","quota.rs","reboot.rs","resource.rs","select.rs","sendfile.rs","signal.rs","signalfd.rs","stat.rs","statfs.rs","statvfs.rs","sysinfo.rs","termios.rs","time.rs","timerfd.rs","uio.rs","utsname.rs","wait.rs"]]],["dir.rs","env.rs","errno.rs","fcntl.rs","features.rs","ifaddrs.rs","kmod.rs","lib.rs","macros.rs","mqueue.rs","poll.rs","pty.rs","sched.rs","time.rs","ucontext.rs","unistd.rs"]]],\
 ["num_traits",["",[["ops",[],["bytes.rs","checked.rs","euclid.rs","inv.rs","mod.rs","mul_add.rs","overflowing.rs","saturating.rs","wrapping.rs"]]],["bounds.rs","cast.rs","float.rs","identities.rs","int.rs","lib.rs","macros.rs","pow.rs","real.rs","sign.rs"]]],\
