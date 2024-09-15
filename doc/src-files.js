@@ -1,6 +1,5 @@
 var srcIndex = new Map(JSON.parse('[\
 ["ads1x1x",["",[["devices",[["features",[],["mod.rs","tier1.rs","tier2.rs"]],["mode",[],["continuous.rs","mod.rs","oneshot.rs"]]],["common.rs","mod.rs"]]],["channels.rs","construction.rs","conversion.rs","ic.rs","interface.rs","lib.rs","types.rs"]]],\
-["ak09915_rs",["",[],["lib.rs"]]],\
 ["approx",["",[],["abs_diff_eq.rs","lib.rs","macros.rs","relative_eq.rs","ulps_eq.rs"]]],\
 ["bitflags",["",[],["lib.rs"]]],\
 ["bitvec",["",[["array",[],["api.rs","iter.rs","ops.rs","traits.rs"]],["boxed",[],["api.rs","iter.rs","ops.rs","traits.rs"]],["field",[],["io.rs"]],["macros",[],["internal.rs"]],["ptr",[],["addr.rs","proxy.rs","range.rs","single.rs","span.rs"]],["slice",[["specialization",[],["lsb0.rs","msb0.rs"]]],["api.rs","iter.rs","ops.rs","specialization.rs","traits.rs"]],["vec",[],["api.rs","iter.rs","ops.rs","traits.rs"]]],["access.rs","array.rs","boxed.rs","devel.rs","domain.rs","field.rs","index.rs","lib.rs","macros.rs","mem.rs","order.rs","ptr.rs","slice.rs","store.rs","vec.rs","view.rs"]]],\
@@ -37,7 +36,7 @@ var srcIndex = new Map(JSON.parse('[\
 ["rand",["",[["distributions",[],["bernoulli.rs","distribution.rs","float.rs","integer.rs","mod.rs","other.rs","slice.rs","uniform.rs","utils.rs"]],["rngs",[],["mock.rs","mod.rs","small.rs","xoshiro256plusplus.rs"]],["seq",[],["mod.rs"]]],["lib.rs","prelude.rs","rng.rs"]]],\
 ["rand_core",["",[],["block.rs","error.rs","impls.rs","le.rs","lib.rs"]]],\
 ["rppal",["",[["gpio",[],["epoll.rs","interrupt.rs","ioctl.rs","mem.rs","pin.rs","soft_pwm.rs"]],["i2c",[],["ioctl.rs"]],["pwm",[],["sysfs.rs"]],["spi",[],["ioctl.rs","segment.rs"]],["uart",[],["termios.rs"]]],["gpio.rs","i2c.rs","lib.rs","macros.rs","pwm.rs","spi.rs","system.rs","uart.rs"]]],\
-["serde",["",[["de",[],["format.rs","ignored_any.rs","impls.rs","mod.rs","seed.rs","size_hint.rs","value.rs"]],["private",[],["de.rs","doc.rs","mod.rs","ser.rs"]],["ser",[],["fmt.rs","impls.rs","impossible.rs","mod.rs"]]],["integer128.rs","lib.rs","macros.rs"]]],\
+["serde",["",[["de",[],["ignored_any.rs","impls.rs","mod.rs","seed.rs","size_hint.rs","value.rs"]],["private",[],["de.rs","doc.rs","mod.rs","ser.rs"]],["ser",[],["fmt.rs","impls.rs","impossible.rs","mod.rs"]]],["format.rs","integer128.rs","lib.rs","macros.rs"]]],\
 ["serial_core",["",[],["lib.rs"]]],\
 ["serial_unix",["",[],["error.rs","lib.rs","poll.rs","tty.rs"]]],\
 ["siphasher",["",[],["lib.rs","sip.rs","sip128.rs"]]],\
