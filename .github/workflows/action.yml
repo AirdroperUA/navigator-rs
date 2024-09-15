@@ -71,6 +71,11 @@ jobs:
         run: cargo install cargo-bump --force
       - name: Modify version with tag
         run: cargo bump ${{ github.ref_name }}
+      - name: Automatic commit for crate version upgrade
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: master
+          commit_message: "Cargo: Update the crate version to ${{ github.ref_name }}"
       - name: Publish to crates.io
         uses: katyo/publish-crates@v1
         with:
