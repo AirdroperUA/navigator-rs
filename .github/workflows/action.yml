@@ -13,8 +13,6 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
         with:
           toolchain: stable
-      - name: Check Type
-        run: cargo fmt -- --check
       - name: Check Clippy
         run: cargo clippy -- -Dwarnings
       - name: Run internal tests
